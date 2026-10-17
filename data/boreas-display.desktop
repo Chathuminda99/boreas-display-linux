@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=BOREAS Display
+Comment=Configure the GAMDIAS BOREAS digital display
+Exec=boreas-display gui
+Icon=video-display
+Categories=Settings;HardwareSettings;
+Keywords=GAMDIAS;BOREAS;ZEUS CAST;CPU;temperature;cooler;
+Terminal=false

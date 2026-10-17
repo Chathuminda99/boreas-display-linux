@@ -1,0 +1,11 @@
+[Unit]
+Description=GAMDIAS BOREAS digital display updater (boreas-display-linux)
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/boreas-display run
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

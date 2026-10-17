@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# Proprietary GAMDIAS files: never commit
+*.exe
+data/*.png

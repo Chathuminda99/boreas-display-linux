@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""Launcher: runs the boreas_display package that sits next to this script (or its install dir)."""
+import os
+import sys
+
+here = os.path.dirname(os.path.realpath(__file__))
+for candidate in (here, os.path.expanduser("~/.local/share/boreas-display")):
+    if os.path.isdir(os.path.join(candidate, "boreas_display")):
+        sys.path.insert(0, candidate)
+        break
+
+from boreas_display.cli import main  # noqa: E402
+
+sys.exit(main())

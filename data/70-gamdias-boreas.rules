@@ -1,0 +1,6 @@
+# GAMDIAS BOREAS digital display (boreas-display-linux).
+# MODE 0666 so it also works from remote/headless sessions and the systemd user
+# service (uaccess alone only covers the active local seat). The device only
+# accepts 4-digit display frames.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1b80", ATTRS{idProduct}=="b53a", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1b80", ATTRS{idProduct}=="b554", MODE="0666", TAG+="uaccess"
